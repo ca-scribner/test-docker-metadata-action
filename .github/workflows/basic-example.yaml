@@ -25,7 +25,7 @@ jobs:
         with:
           images: name/app
       - name: Print Docker meta outputs
-        run: -
+        run: |
           echo "version = ${{ steps.meta.outputs.version }}"
           echo "tags = ${{ steps.meta.outputs.tags }}"
           echo "labels = ${{ steps.meta.outputs.labels }}"
